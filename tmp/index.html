@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cursor | Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <div class="cb-demo">
+      <div class="cb-demo-content">
+        <div class="cb-demo-container">
+          <div class="cb-demo-items">
+            <div class="cb-demo-row">
+              <div class="cb-demo-item" data-cursor="-color-red">
+                <div class="cb-demo-item-title">Set Color</div>
+                <div class="cb-demo-item-text" data-cursor="-color-green">Any color via CSS class with <b>.setState('colorClass')</b> or <b>[data-cursor="colorClass"</b>] attribute</div>
+              </div>
+              <div class="cb-demo-item" data-cursor-text="Hello!">
+                <div class="cb-demo-item-title">Set Text</div>
+                <div class="cb-demo-item-text">Set text with <b>.setText('Text string')</b> or <b>[data-cursor-text="Text string"</b>] attribute</div>
+              </div>
+              <div class="cb-demo-item" data-cursor="-opaque">
+                <div class="cb-demo-item-title">Exclusion mode</div>
+                <div class="cb-demo-item-text">Exclusion or opaque mode with <b>.setState('-opaque')</b> or <b>[data-cursor="-opaque"</b>] attribute</div>
+              </div>
+            </div>
+            <div class="cb-demo-row">
+              <div class="cb-demo-item" data-cursor="-lg">
+                <div class="cb-demo-item-title">Set size</div>
+                <div class="cb-demo-item-text">Any size via CSS class with <b>.setState('sizeClass')</b> or <b>[data-cursor="sizeClass"</b>] attribute</div>
+              </div>
+              <div class="cb-demo-item" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
+                <div class="cb-demo-item-title" id="cursor-stick-area">Stick</div>
+                <div class="cb-demo-item-text">Set sticky cursor with <b>.setStick(element)</b> or <b>[data-cursor-stick="selector"</b>] attribute</div>
+              </div>
+              <div class="cb-demo-item" data-magnetic data-cursor="-opaque">
+                <div class="cb-demo-item-title">Magnetic</div>
+                <div class="cb-demo-item-text">Magnetic via [data-magnetic] attribute and opaque style cursor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/bundle.js" defer></script>
+  </body>
+</html>
